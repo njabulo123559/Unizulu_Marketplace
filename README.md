@@ -14,7 +14,7 @@ The Unizulu e-commerce project is an online platform designed for Unizulu studen
 - **Backend:** PHP
 - **Frontend:** HTML, CSS, JavaScript
 - **Database:** MySQL
-- **Other Tools:** Git, Apache (XAMPP), PayPal Integration (optional)
+- **Other Tools:** Git, Apache (XAMPP), Stripe(Payment Gateway)
 
 ## Installation Instructions
 
@@ -27,5 +27,19 @@ The Unizulu e-commerce project is an online platform designed for Unizulu studen
 #### 1. Clone the Repository
 First, clone the GitHub repository to your local machine:
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/njabulo123559/Unizulu_Marketplace.git
 cd your-repository-name
+
+## **Set Up XAMPP**
+ - Start XAMPP and ensure both Apache and MySQL services are running.
+ - Place the cloned project in the htdocs directory inside XAMPP (usually C:\xampp\htdocs).
+
+## **Update the Database Connection**
+In the config/db.php file, update the database credentials:
+
+  - define('DB_SERVER', 'localhost');
+  - define('DB_USERNAME', 'root'); // Default username in XAMPP
+  - define('DB_PASSWORD', ''); // No password in XAMPP by default
+  - define('DB_NAME', 'your-database-name');
+
+## composer install
