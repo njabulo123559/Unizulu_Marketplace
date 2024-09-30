@@ -1,0 +1,17 @@
+{
+    "name": "ndlel/project-root",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Ndlel\\ProjectRoot\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Njabulo Ndlela"
+        }
+    ],
+    "require": {
+        "stripe/stripe-php": "^15.10"
+    }
+}
